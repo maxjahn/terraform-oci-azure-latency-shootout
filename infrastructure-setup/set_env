@@ -10,11 +10,9 @@ export TF_VAR_oci_region=uk-london-1
 
 # centos 7
 export TF_VAR_oci_base_image=ocid1.image.oc1.uk-london-1.aaaaaaaabf2eslezq4wejiu3kq7zbbbmkw5k55eltwmpgpgzju2t7q3nlx7q
-export TF_VAR_oci_remote_base_image=ocid1.image.oc1.eu-frankfurt-1.aaaaaaaayr4br26ycze7ku5ygfxbyuvllpadmkcif7hwffmcd6d5fftwl35a
 
 # oracle linux 7
 #export TF_VAR_oci_base_image=ocid1.image.oc1.uk-london-1.aaaaaaaa2jxzt25jti6n64ks3hqbqbxlbkmvel6wew5dc2ms3hk3d3bdrdoa
-#export TF_VAR_oci_remote_base_image=ocid1.image.oc1.eu-frankfurt-1.aaaaaaaa4xluwijh66fts4g42iw7gnixntcmns73ei3hwt2j7lihmswkrada
 
 
 # 
@@ -29,11 +27,6 @@ export TF_VAR_oci_cidr_server_subnet="10.0.2.0/24"
 # vpn test vcn
 export TF_VAR_oci_cidr_vpn_vcn="10.3.0.0/16"
 export TF_VAR_oci_cidr_vpn_subnet="10.3.1.0/24"
-
-# remote vcn (for inter-region tests)
-export TF_VAR_oci_region_remote="eu-frankfurt-1"
-export TF_VAR_oci_cidr_remote_vcn="10.10.0.0/16"
-export TF_VAR_oci_cidr_remote_subnet="10.10.1.0/24"
 
 ### azure
 export TF_VAR_arm_client_id=""

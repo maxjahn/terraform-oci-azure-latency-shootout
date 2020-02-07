@@ -9,17 +9,12 @@ variable "oci_cidr_vcn" {}
 variable "oci_cidr_client_subnet" {}
 variable "oci_cidr_server_subnet" {}
 
-variable "oci_region_remote" {}
-variable "oci_cidr_remote_vcn" {}
-variable "oci_cidr_remote_subnet" {}
-
 variable "oci_cidr_vpn_vcn" {}
 variable "oci_cidr_vpn_subnet" {}
 
 variable "oci_azure_provider_ocid" {}
 
 variable "oci_base_image" {}
-variable "oci_remote_base_image" {}
 variable "arm_subscription_id" {}
 variable "arm_client_id" {}
 variable "arm_client_secret" {}
