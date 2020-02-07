@@ -34,17 +34,19 @@ The file set_env contains a couple of environment variables that need to be set.
 
 ### Interconnect Region
 
+To use a different region (e.g. Ashburn/Washington DC or Toronto) some values need to be changed. In OCI several resources are dependent on the region, so you have to look up the proper OCIDs and use these values. 
+
 `TF_VAR_oci_region=uk-london-1`
 
-`TF_VAR_oci_base_image= ...`
+`TF_VAR_oci_base_image= ...` base image to use for OCI VMs created
 
-`TF_VAR_oci_remote_base_image= ...`
+`TF_VAR_oci_azure_provider_ocid= ...` OCID of Azure provider in the region. Look this up using OCI CLI `oci network fast-connect-provider-service list --compartment-id YOUR_COMPARTMENT_OCID --region REGION --all`
 
-`TF_VAR_oci_azure_provider_ocid= ...`
-
-`TF_VAR_arm_region="UK South"
+`TF_VAR_arm_region="UK South"`
 
 
-### 
+## Caveats
 
+- There is an issue with public IPs assignment in Azure. These will be assigned only after the VNICs are using these IPs and therefore might not be available to the terraform scripts in time. In case your `terraform apply` fails, just repeat this step.
+- When tearing down the infrastructure there is an issue that FastConnect will be in FAILED state and not in TERMINATED state as expected by terraform. In this case you need to terminate/delete the FastConnect circuit and the DRG manually in OCI GUI. You also will need to tear down the ExpressRoute circuit manually in Azure UI, or just delete the whole resource group.
 
