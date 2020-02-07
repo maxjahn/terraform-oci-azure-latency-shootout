@@ -5,6 +5,9 @@ Here you can find terraform scripts for setting up an environment for testing th
 - connect via public internet
 - connect via VPN
 
+![alt text](docs/interconnect_env.png "Environment")
+
+
 Several VMs are set up with tooling for testing connectivity:
 - iperf
 - iperf3
