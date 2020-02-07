@@ -9,4 +9,5 @@ Several VMs are set up with tooling for testing connectivity:
 - iperf
 - iperf3
 - qperf
+- sockperf
 
