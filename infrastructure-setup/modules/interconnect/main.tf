@@ -120,7 +120,7 @@ resource "azurerm_express_route_circuit" "connect_erc" {
   bandwidth_in_mbps     =  1000
 
   sku {
-    tier   = "Standard"
+    tier   = "Local"
     family = "MeteredData"
   }
 
