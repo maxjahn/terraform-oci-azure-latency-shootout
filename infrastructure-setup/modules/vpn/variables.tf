@@ -1,19 +1,30 @@
-variable "oci_compartment_ocid" {}
+variable "oci_compartment_ocid" {
+}
 
-variable "oci_vpn_vcn_id" {}
-variable "oci_vpn_subnet_cidr" {}
+variable "oci_vpn_vcn_id" {
+}
 
-variable "oci_azure_provider_ocid" {}
+variable "oci_vpn_subnet_cidr" {
+}
 
-variable "arm_resource_group_location" {}
-variable "arm_resource_group_name" {}
+variable "oci_azure_provider_ocid" {
+}
 
-variable "arm_cidr_vnet" {}
+variable "arm_resource_group_location" {
+}
 
-variable "arm_vpn_subnet_cidr" {}
-variable "arm_vpn_gw_subnet_id" {}
+variable "arm_resource_group_name" {
+}
 
-variable "peering_net" {}
+variable "arm_cidr_vnet" {
+}
 
+variable "arm_vpn_subnet_cidr" {
+}
 
+variable "arm_vpn_gw_subnet_id" {
+}
+
+variable "peering_net" {
+}
 
